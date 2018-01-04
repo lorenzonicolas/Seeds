@@ -4,18 +4,23 @@ angular.module('testApp').config(router);
 function router($routeProvider) {
 
   $routeProvider
-    .when('/', {
+    .when('/main', {
       templateUrl: 'components/main/main.html',
       controller: 'MainCtrl',
-      controllerAs: 'main'
+      controllerAs: 'vm'
     })
     .when('/about', {
       templateUrl: 'components/about/about.html',
       controller: 'AboutCtrl',
-      controllerAs: 'about'
+      controllerAs: 'vm'
+    })
+    .when('/contact', {
+      templateUrl: 'components/contact/contact.html',
+      controller: 'ContactCtrl',
+      controllerAs: 'vm'
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/main'
     });
 
 }
