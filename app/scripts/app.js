@@ -21,7 +21,4 @@ angular
   ]).run(runFunction);
 
 function runFunction(){
-
-  
-
 }

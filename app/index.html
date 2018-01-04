@@ -26,7 +26,10 @@
       <navigator></navigator>
     </div>
 
-    <div class="container" ng-view>
+    <spinner loading="$root.showSpinner"></spinner>
+    
+    <div class="container">
+      <ng-view></ng-view>
     </div>
 
     <div class="footer">
@@ -72,6 +75,7 @@
         <script src="components/contact/contact.controller.js"></script>
         <script src="components/navigator/navigator.component.js"></script>
         <script src="components/footer/footer.component.js"></script>
+        <script src="components/spinner/spinner.component.js"></script>
 
         <script src="components/services/cookie.service.js"></script>
         <script src="components/services/rest.service.js"></script>
